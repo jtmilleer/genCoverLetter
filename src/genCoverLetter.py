@@ -32,9 +32,9 @@ def genLetter(company,title)->None:
         convert(docx_path, pdf_path)
         print(f"Saved PDF: {pdf_path}")
     except ImportError:
-        print("⚠️ PDF export requires 'docx2pdf'. Install with: pip install docx2pdf")
+        print("PDF export requires 'docx2pdf'. Install with: pip install docx2pdf")
     except Exception as e:
-        print(f"⚠️ Could not generate PDF: {e}")
+        print(f"Could not generate PDF: {e}")
 
 
 
